@@ -23,14 +23,14 @@ const Signup = ({ onsignup }) => {
 
   return (
     <div className="justify-center justify-items-center min-h-screen bg-black text-white ">
-      <div className="pt-[2rem] ">
+      <div className="pt-[2rem] cursor-defualt">
         <img
           className="cursor-pointer mt-1 h-[2rem] size-[3rem]"
           src={Logo}
           alt="Logo"
         />
       </div>
-      <h1 className="mt-3 font-bold text-2xl">Create a new account</h1>
+      <h1 className="mt-3 font-bold text-2xl cursor-default">Create a new account</h1>
       <form className="mt-[2rem]" onSubmit={handleSubmit}>
         <div className="mt-[-1rem]">
           <input
@@ -80,9 +80,9 @@ const Signup = ({ onsignup }) => {
         />
         <div className="mt-3 accent-red-500 flex font-bold">
           <input type="radio" name="choose" />
-          <h1 className="ml-1">Male</h1>
+          <h1 className="ml-1 cursor-default">Male</h1>
           <input className="ml-3" type="radio" name="choose" />
-          <h1 className="ml-1">Female</h1>
+          <h1 className="ml-1 cursor-default">Female</h1>
         </div>
         <button
           className="mt-3 w-[19rem] h-[2.3rem] rounded-[5px] font-bold hover:bg-green-600 bg-green-500 "
