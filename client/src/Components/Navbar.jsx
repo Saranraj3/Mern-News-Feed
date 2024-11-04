@@ -6,18 +6,18 @@ const Navbar = () => {
     <div>
       <div className="mt-[-0.8rem] h-[3rem] bg-black">
         <img
-          className="mt-3 ml-5 pt-2 h-[2.5rem] size-[4.5rem]"
+          className="sm:h-[2rem] sm:size-[3rem] sm:ml-2 mt-3 lg:ml-5 pt-2 lg:h-[2.5rem] lg:size-[4.5rem]"
           src={Logo}
           alt="Logo"
         />
-        <h1 className="mt-[-2rem] text-2xl font-bold text-white text-center">
+        <h1 className="sm:text-base sm:mt-[-1.4rem] lg:text-2xl lg:mt-[-2rem] font-bold text-white text-center">
           News Time
         </h1>
-        <div className="mt-[-2rem] mr-5 flex justify-items-end justify-end">
-          <button className="rounded-md hover:bg-blue-600 bg-blue-500 h-[2rem] w-[4rem]">
+        <div className="sm:mt-[-1.6rem] lg:mt-[-2rem] mr-2 flex justify-items-end justify-end">
+          <button className="sm:h-[2rem] sm:w-[3rem] sm:text-sm font-bold rounded-md hover:bg-blue-600 bg-blue-500 lg:h-[2rem] lg:w-[4rem]">
             Login
           </button>
-          <button className="ml-3 rounded-md hover:bg-blue-600 bg-blue-500 h-[2rem] w-[4rem]">
+          <button className="sm:h-[2rem] sm:w-[3rem] sm:text-sm font-bold ml-3 rounded-md hover:bg-blue-600 bg-blue-500 lg:h-[2rem] lg:w-[4rem]">
             Signup
           </button>
         </div>
