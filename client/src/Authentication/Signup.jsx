@@ -10,7 +10,7 @@ const Signup = ({ onsignup }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phonenumber, setPhonenumber] = useState("");
-  const [selected, setSelected] = useState("");
+  const [nationality, setNationality] = useState("");
 
   const navigate = useNavigate();
 
@@ -30,7 +30,9 @@ const Signup = ({ onsignup }) => {
           alt="Logo"
         />
       </div>
-      <h1 className="mt-3 font-bold text-2xl cursor-default">Create a new account</h1>
+      <h1 className="mt-3 font-bold text-2xl cursor-default">
+        Create a new account
+      </h1>
       <form className="mt-[2rem]" onSubmit={handleSubmit}>
         <div className="mt-[-1rem]">
           <input
@@ -74,8 +76,8 @@ const Signup = ({ onsignup }) => {
         </div>
         <ReactFlagsSelect
           className="mt-3 bg-white text-black"
-          selected={selected}
-          onSelect={(code) => setSelected(code)}
+          selected={nationality}
+          onSelect={(code) => setNationality(code)}
           searchable
         />
         <div className="mt-3 accent-red-500 flex font-bold">
