@@ -11,6 +11,7 @@ const Signup = ({ onsignup }) => {
   const [password, setPassword] = useState("");
   const [phonenumber, setPhonenumber] = useState("");
   const [nationality, setNationality] = useState("");
+  const [gender, setGender] = useState("");
 
   const navigate = useNavigate();
 
@@ -81,9 +82,24 @@ const Signup = ({ onsignup }) => {
           searchable
         />
         <div className="mt-3 accent-red-500 flex font-bold">
-          <input type="radio" name="choose" />
+          <input
+            type="radio"
+            value="male"
+            checked={gender === "male"}
+            onChange={(e) => setGender(e.target.value)}
+            required
+            name="choose"
+          />
           <h1 className="ml-1 cursor-default">Male</h1>
-          <input className="ml-3" type="radio" name="choose" />
+          <input
+            type="radio"
+            value="female"
+            checked={gender === "female"}
+            onChange={(e) => setGender(e.target.value)}
+            required
+            name="choose"
+            className="ml-3"
+          />
           <h1 className="ml-1 cursor-default">Female</h1>
         </div>
         <button
